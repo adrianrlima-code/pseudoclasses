@@ -1,0 +1,32 @@
+body{
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100dvh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+div{
+    background-color:pink;
+    width: 300px; 
+    height: 300px;
+}
+.esquerda:hover{
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-IgSPdA-1ypXn3d2dVOhIfkHvGYBRU3EB4moeaSf7bM5y2YR1BCbTbLM&s=10);
+}
+.esquerda:active{
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2p_vgUc0t7JXlNm2cjReRsj5LGQ4cUXPWyKWvU0sxGDqj7c2I_gq9i32L&s=10);
+}
+
+.direita:hover{
+    background-size: cover;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY8T7Tlcm8wRR2aWgzZ4MQK1rTwl5M5tLTXy7QZ7sqaw&s=10);
+;
+}
+.direita:active{
+    background-size: cover;
+    background-image: url(https://static.wikia.nocookie.net/shuumatsu-no-valkyrie/images/a/a6/Raiden_P_manga.png/revision/latest?cb=20210423130312&path-prefix=es);
+}
