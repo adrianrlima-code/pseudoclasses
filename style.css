@@ -1,54 +1,38 @@
-body {
-    height: 100dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* estilo da caixa */
-div{
+#caixa{
     width: 200px;
     height: 200px;
+    background-color: crimson;
+    
+    
+    animation: normal mudarcor 5s ease-in-out forwards;
+    
+}
+@keyframes mudarcor {
+    from{
+        background-color: black;
+    }
+    to{
+        background-color: aqua;
+        border-radius: 100%;
+    }
+
 }
 
-#caixa1 {
-    background-color: red;
+
+#quadrado{
+    width: 200px;
+    height: 200px;
+    background-color: chartreuse;
+    animation: girar 3s linear infinite;
 }
 
-#caixa2 {
-    background-color: blue;
+@keyframes girar{
+    from {
+        transform: rotate(0);
+
+    }
+
+to{
+    transform: rotate(360deg);
 }
-
-/*quando eu passar o mouse em cima da tag*/
-#caixa1:hover {
-    border-radius: 100%;
-}
-
-/* usando o houver na caixa02, mude a cor dela */
-#caixa2:hover{
-    background-color: black;
-}
-
-/* quando eu clicar com o mouse em alguma tag */
-
-#caixa1:active {
-    transform: scale(0.9);
-}
-
-/* sinal ~ serve para procurar irmão /*
-/* sinal > serve para pegar o filho */
-
-/*pega o primeiro filho do elemento pai*/
-body >:last-child {
-     background-color: blueviolet;
-     border-radius: 100%;
-}
-
-body >:first-child {
-    background-color: blueviolet;
-    border-radius: 100%;
-}
-
-body>:nth-child(2){
-    border-radius: 100%;
 }
